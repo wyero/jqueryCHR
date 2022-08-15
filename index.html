@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Open+Sans:wght@700;800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/style/css/style.css">
+</head>
+<body>
+    <nav>
+        <ion-icon name="moon-outline" class="icon"></ion-icon>
+    </nav>
+    <section>
+        <h1>Cristiano Ronaldo</h1>
+        <div class="image">
+            <img src="/asset/img/ronaldo.jpg" alt="ronaldo">
+        </div>
+        <div class="teks">
+            <p>
+                Cristiano Ronaldo dos Santos Aveiro adalah seorang pemain sepak bola profesional asal Portugal yang bermain sebagai penyerang untuk klub Liga Inggris, Manchester United, dan juga kapten untuk tim nasional Portugal. Sering dianggap sebagai pemain terbaik di dunia dan secara luas dianggap sebagai salah satu pemain terhebat sepanjang masa, Ronaldo memenangkan lima penghargaan Ballon d'Or dan empat sepatu emas Eropa.
+            </p>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(".icon").click(function(){
+            $("body").toggleClass("dark-mode")
+            if($("body").hasClass("dark-mode")){
+                $(".icon").attr("name", "sunny-outline")
+            }else{
+                $(".icon").attr("name", "moon-outline")
+            }
+        })
+    </script>
+</body>
+</html>
